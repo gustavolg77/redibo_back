@@ -11,3 +11,10 @@ Contiene las definiciones de tipos personalizados de TypeScript
     - Extenciones de tipos existentes
     - Enumeraciones (Enums)
 */
+export interface Alert {
+    id: string;
+    title: string;
+    message: string;
+    date: string;
+  }
+  

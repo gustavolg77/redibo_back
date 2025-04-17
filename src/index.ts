@@ -1,25 +1,23 @@
-import express from 'express';
-import cors from 'cors';
-import helmet from 'helmet';
-import dotenv from 'dotenv';
-
-// Cargar variables de entorno
-dotenv.config();
+import express from "express";
+import cors from "cors";
+import alertRoutes from "./routes/alertRoutes";
+import carRoutes from "./routes/carRoutes";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 5000;
 
-// Middlewares
 app.use(cors());
-app.use(helmet());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
-// End point para verificar la salud de la conexión de la API
-app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'ok' });
+// Ruta raíz opcional (soluciona el "Cannot GET /")
+app.get("/", (req, res) => {
+  res.send("🚗 API de RediBo funcionando correctamente");
 });
 
+// Rutas de la API
+app.use("/api/alerts", alertRoutes);
+app.use("/api/cars", carRoutes);
+
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });

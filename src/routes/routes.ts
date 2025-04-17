@@ -9,11 +9,6 @@ Define las rutas (URL's) de la API
     - Mapeo de URL a controladores
     - Aplicación de middlewares específicos a rutas
 */
+// src/routes/routes.ts
 
-import { Router } from 'express';
 
-const router = Router();
-
-// router.get('/', index);
-
-export { router as userRouter };

@@ -13,3 +13,7 @@ Controladores que manejan las solicitudes HTTP (la lógica del lado del servidor
 Toma en cuenta la separación de responsabilidades, reutilización del código 
 y el principio de Single Resposability al momento de desarrollar
 */
+// src/controllers/controller.ts
+
+
+

@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-export async function obtenerResumenAuto(id: number) {
+export async function getCarSummary(id: number) {
   try {
     const auto = await prisma.auto.findUnique({
       where: { id },

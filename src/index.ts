@@ -10,7 +10,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middlewares
-app.use(cors());
+///CORS 
+app.use(cors({
+  origin: 'http://localhost:3002', // aqui va el puerto del FRONTEND
+  credentials: true
+}));
+/// PROBANDO CON CORS LA COMUNICACION CON EL FRONTED
 app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

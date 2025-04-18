@@ -11,3 +11,5 @@ Funcionalidades de utilidad reutilizables
     - Validaciones
     Entre otros ejemplos
 */
+// src/utils/utils.ts
+

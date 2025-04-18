@@ -1,30 +1,32 @@
-import express from 'express';
-import cors from 'cors';
-import helmet from 'helmet';
-import dotenv from 'dotenv';
-
-// Cargar variables de entorno
-dotenv.config();
+import express from "express";
+import cors from "cors";
+import helmet from "helmet";
+import alertRoutes from "./routes/alertRoutes";
+import carRoutes from "./routes/carRoutes";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 5000;
 
-// Middlewares
-///CORS 
+// CORS configuracion para permitir peticiones desde el frontend
 app.use(cors({
-  origin: 'http://localhost:3002', // aqui va el puerto del FRONTEND
+  origin: 'http://localhost:3002', // aquí va el puerto del FRONTEND
   credentials: true
 }));
-/// PROBANDO CON CORS LA COMUNICACION CON EL FRONTED
-app.use(helmet());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
-// End point para verificar la salud de la conexión de la API
-app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'ok' });
+// Seguridad con Helmet (opcional, pero recomendable)
+app.use(helmet());
+
+app.use(express.json());
+
+// ruta raiz opcional soluciona el "Cannot GET /'
+app.get("/", (req, res) => {
+  res.send("🚗 API de RediBo funcionando correctamente");
 });
 
+// Rutas de la API
+app.use("/api/alerts", alertRoutes);
+app.use("/api/cars", carRoutes);
+
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });

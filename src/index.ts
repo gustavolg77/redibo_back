@@ -1,8 +1,10 @@
 import express from "express";
 import cors from "cors";
-import helmet from "helmet";
+import helmet from "helmet"; // Seguridad con Helmet
+import path from "path"; // Utilizar path si es necesario más adelante
 import alertRoutes from "./routes/alertRoutes";
 import carRoutes from "./routes/carRoutes";
+import rentalsRoutes from "./routes/rentals";
 
 const app = express();
 const PORT = 5000;
@@ -18,7 +20,7 @@ app.use(helmet());
 
 app.use(express.json());
 
-// ruta raiz opcional soluciona el "Cannot GET /'
+// Ruta raíz opcional
 app.get("/", (req, res) => {
   res.send("🚗 API de RediBo funcionando correctamente");
 });

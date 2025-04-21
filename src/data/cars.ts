@@ -13,7 +13,7 @@ export const cars = [
     description: 'El Toyota Corolla 2022 es un sedán compacto confiable y eficiente en combustible, perfecto para viajes urbanos.',
     features: ['Aire acondicionado', 'Cámara de retroceso', 'Control crucero', 'Bluetooth'],
     topRank: 2,
-    owner: 'Pedro González',
+    owner: 'Elena Rivas',
     color: 'Gris'
   },
   {
@@ -22,14 +22,14 @@ export const cars = [
     model: 'Civic',
     year: 2021,
     image: '',
-    status: 'En mantenimiento',
+    status: 'Alquilado',
     totalRentals: 22,
     totalUsageDays: 67,
     pricePerDay: 50,
     description: 'El Honda Civic 2021 ofrece un manejo ágil y un interior espacioso con tecnología avanzada.',
     features: ['Asientos de cuero', 'Pantalla táctil', 'Sensores de estacionamiento', 'Apple CarPlay'],
     topRank: 1,
-    owner: 'Lucía Martínez',
+    owner: 'Elena Rivas',
     color: 'Rojo'
   },
   {
@@ -45,7 +45,7 @@ export const cars = [
     description: 'El Ford Mustang 2023 es un muscle car potente con un diseño icónico y un rendimiento excepcional.',
     features: ['Motor V8', 'Sistema de escape activo', 'Asientos deportivos', 'Modos de conducción'],
     topRank: 3,
-    owner: 'Carlos Ramírez',
+    owner: 'Elena Rivas',
     color: 'Negro'
   },
   {
@@ -55,13 +55,13 @@ export const cars = [
     year: 2021,
     image: '',
     status: 'Disponible',
-    totalRentals: 8,
+    totalRentals: 9,
     totalUsageDays: 18,
     pricePerDay: 90,
     description: 'El Ford Mustang 2023 es un muscle car potente con un diseño icónico y un rendimiento excepcional.',
     features: ['Motor V8', 'Sistema de escape activo', 'Asientos deportivos', 'Modos de conducción'],
     topRank: 5,
-    owner: 'Diana Suárez',
+    owner: 'Elena Rivas',
     color: 'Blanco'
   },
   {
@@ -79,5 +79,69 @@ export const cars = [
     topRank: 4,
     owner: 'Elena Rivas',
     color: 'Azul'
+  },
+  {
+    id: 6,
+    brand: 'Nissan',
+    model: 'Kicks',
+    year: 2022,
+    image: '',
+    status: 'Disponible',
+    totalRentals: 28,
+    totalUsageDays: 11,
+    pricePerDay: 40,
+    description: 'El Ford Mustang 2023 es un muscle car potente con un diseño icónico y un rendimiento excepcional.',
+    features: ['Motor V8', 'Sistema de escape activo', 'Asientos deportivos', 'Modos de conducción'],
+    topRank: 4,
+    owner: 'Elena Rivas',
+    color: 'Blanco'
+  },
+  {
+    id: 7,
+    brand: 'Chevrolet',
+    model: 'Onix',
+    year: 2018,
+    image: '',
+    status: 'Disponible',
+    totalRentals: 27,
+    totalUsageDays: 11,
+    pricePerDay: 55,
+    description: 'El Ford Mustang 2023 es un muscle car potente con un diseño icónico y un rendimiento excepcional.',
+    features: ['Motor V8', 'Sistema de escape activo', 'Asientos deportivos', 'Modos de conducción'],
+    topRank: 4,
+    owner: 'Elena Rivas',
+    color: 'Gris'
+  },
+  {
+    id: 8,
+    brand: 'Ford',
+    model: 'Eco Sport',
+    year: 2021,
+    image: '',
+    status: 'Disponible',
+    totalRentals: 25,
+    totalUsageDays: 10,
+    pricePerDay: 60,
+    description: 'El Ford Mustang 2023 es un muscle car potente con un diseño icónico y un rendimiento excepcional.',
+    features: ['Motor V8', 'Sistema de escape activo', 'Asientos deportivos', 'Modos de conducción'],
+    topRank: 4,
+    owner: 'Elena Rivas',
+    color: 'Rojo'
+  },
+  {
+    id: 9,
+    brand: 'Nissan',
+    model: 'March',
+    year: 2020,
+    image: '',
+    status: 'Disponible',
+    totalRentals: 15,
+    totalUsageDays: 8,
+    pricePerDay: 30,
+    description: 'El Ford Mustang 2023 es un muscle car potente con un diseño icónico y un rendimiento excepcional.',
+    features: ['Motor V8', 'Sistema de escape activo', 'Asientos deportivos', 'Modos de conducción'],
+    topRank: 4,
+    owner: 'Elena Rivas',
+    color: 'Blanco'
   }
 ];

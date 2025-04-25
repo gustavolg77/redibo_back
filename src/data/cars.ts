@@ -14,7 +14,7 @@ export const cars = [
     features: ['Aire acondicionado', 'Cámara de retroceso', 'Control crucero', 'Bluetooth'],
     topRank: 2,
     owner: 'Elena Rivas',
-    color: 'Gris'
+    color: ''
   },
   {
     id: 2,
@@ -50,10 +50,10 @@ export const cars = [
   },
   {
     id: 4,
-    brand: 'Rav',
-    model: 'Mustang',
+    brand: 'Toyota',
+    model: 'Rav 4',
     year: 2021,
-    image: '',
+    image: 'https://www.webmotors.com.br/rbx/_next/image?url=https%3A%2F%2Fimage.webmotors.com.br%2F_fotos%2Fanunciousados%2Fgigante%2F2025%2F202504%2F20250410%2Ftoyota-rav4-2-5-vvtie-hybrid-s-awd-cvt-wmimagem13585420622.webp&w=256&q=75',
     status: 'Disponible',
     totalRentals: 9,
     totalUsageDays: 18,
@@ -85,7 +85,7 @@ export const cars = [
     brand: 'Nissan',
     model: 'Kicks',
     year: 2022,
-    image: '',
+    image: 'https://www.tourinnovacion.cl/wp-content/uploads/2023/12/NISSAN-KICKS.jpg',
     status: 'Disponible',
     totalRentals: 28,
     totalUsageDays: 11,
@@ -94,14 +94,14 @@ export const cars = [
     features: ['Motor V8', 'Sistema de escape activo', 'Asientos deportivos', 'Modos de conducción'],
     topRank: 4,
     owner: 'Elena Rivas',
-    color: 'Blanco'
+    color: 'Rojo'
   },
   {
     id: 7,
     brand: 'Chevrolet',
     model: 'Onix',
     year: 2018,
-    image: '',
+    image: 'https://anteriorportal.erbol.com.bo/sites/default/files/img_noticias/dscn9986_0.jpg',
     status: 'Disponible',
     totalRentals: 27,
     totalUsageDays: 11,
@@ -117,7 +117,7 @@ export const cars = [
     brand: 'Ford',
     model: 'Eco Sport',
     year: 2021,
-    image: '',
+    image: 'https://static.abw.by/upload/2024/11/19/d4c399fea43227c83b70d720bdc99f1c/d4c399fea43227c83b70d720bdc99f1c-600.jpeg',
     status: 'Disponible',
     totalRentals: 25,
     totalUsageDays: 10,
@@ -133,7 +133,7 @@ export const cars = [
     brand: 'Nissan',
     model: 'March',
     year: 2020,
-    image: '',
+    image: 'https://www.webmotors.com.br/rbx/_next/image?url=https%3A%2F%2Fimage.webmotors.com.br%2F_fotos%2Fanunciousados%2Fgigante%2F2025%5C202504%5C20250410%5Cnissan-march-1.6-sv-16v-flexstart-4p-manual-wmimagem15143746251.jpg&w=256&q=75',
     status: 'Disponible',
     totalRentals: 15,
     totalUsageDays: 8,

@@ -1,3 +1,13 @@
+// src/types/car.ts
+
+export interface Rental {
+  rentalId: number;
+  tenant: string;
+  startDate: string;
+  endDate: string;
+  price: number;
+}
+
 export interface Car {
   id: number;
   brand: string;
@@ -12,4 +22,8 @@ export interface Car {
   features: string[];
   owner?: string;
   color?: string;
+
+  // ← Nuevas propiedades:
+  topRank?: number;
+  rentals: Rental[];
 }

@@ -14,7 +14,23 @@ export const cars = [
     features: ['Aire acondicionado', 'Cámara de retroceso', 'Control crucero', 'Bluetooth'],
     topRank: 2,
     owner: 'Elena Rivas',
-    color: ''
+    color: 'Azul',
+    rentals: [
+      {
+        rentalId: 5,
+        tenant: 'Ana Robeda',
+        startDate: '2025-05-05',
+        endDate: '2025-05-08',
+        price: 250
+      },
+      {
+        rentalId: 6,
+        tenant: 'Polo Lopez',
+        startDate: '2025-05-16',
+        endDate: '2025-05-25',
+        price: 150
+      },
+    ] // agregado
   },
   {
     id: 2,
@@ -30,7 +46,37 @@ export const cars = [
     features: ['Asientos de cuero', 'Pantalla táctil', 'Sensores de estacionamiento', 'Apple CarPlay'],
     topRank: 1,
     owner: 'Elena Rivas',
-    color: 'Rojo'
+    color: 'Rojo',
+    rentals: [
+      {
+        rentalId: 1,
+        tenant: 'Juan Pérez',
+        startDate: '2025-05-01',
+        endDate: '2025-05-05',
+        price: 250
+      },
+      {
+        rentalId: 2,
+        tenant: 'Carlos Gómez',
+        startDate: '2025-05-10',
+        endDate: '2025-05-15',
+        price: 150
+      },
+      {
+        rentalId: 3,
+        tenant: 'George Lomada',
+        startDate: '2025-05-18',
+        endDate: '2025-05-19',
+        price: 150
+      },
+      {
+        rentalId: 4,
+        tenant: 'Alex Furt',
+        startDate: '2025-05-25',
+        endDate: '2025-05-28',
+        price: 150
+      }
+    ]
   },
   {
     id: 3,
@@ -46,7 +92,8 @@ export const cars = [
     features: ['Motor V8', 'Sistema de escape activo', 'Asientos deportivos', 'Modos de conducción'],
     topRank: 3,
     owner: 'Elena Rivas',
-    color: 'Negro'
+    color: 'Negro',
+    rentals: [] // agregado
   },
   {
     id: 4,
@@ -58,28 +105,47 @@ export const cars = [
     totalRentals: 9,
     totalUsageDays: 18,
     pricePerDay: 90,
-    description: 'El Ford Mustang 2023 es un muscle car potente con un diseño icónico y un rendimiento excepcional.',
-    features: ['Motor V8', 'Sistema de escape activo', 'Asientos deportivos', 'Modos de conducción'],
+    description: 'El Toyota Rav 4 es un SUV híbrido que combina potencia, economía y confort.',
+    features: ['Tracción en las cuatro ruedas', 'Sensor de lluvia', 'Pantalla multimedia'],
     topRank: 5,
     owner: 'Elena Rivas',
-    color: 'Blanco'
+    color: 'Blanco',
+    rentals: [
+      {
+        rentalId: 7,
+        tenant: 'Pepito',
+        startDate: '2025-05-04',
+        endDate: '2025-05-06',
+        price: 250
+      },
+      {
+        rentalId: 8,
+        tenant: 'Sol Paz',
+        startDate: '2025-05-10',
+        endDate: '2025-05-18',
+        price: 150
+      },
+    ] // agregado
   },
   {
     id: 5,
     brand: 'Nissan',
-    model: 'Mustang',
+    model: 'Altima',
     year: 2020,
     image: '',
     status: 'Disponible',
     totalRentals: 30,
     totalUsageDays: 12,
     pricePerDay: 90,
-    description: 'El Ford Mustang 2023 es un muscle car potente con un diseño icónico y un rendimiento excepcional.',
-    features: ['Motor V8', 'Sistema de escape activo', 'Asientos deportivos', 'Modos de conducción'],
+    description: 'El Nissan Altima 2020 ofrece comodidad y eficiencia con tecnología moderna.',
+    features: ['Motor turbo', 'Pantalla táctil', 'Asistente de carril'],
     topRank: 4,
     owner: 'Elena Rivas',
-    color: 'Azul'
-  },
+    color: 'Azul',
+    rentals: [] // agregado
+  }
+];
+  /*
   {
     id: 6,
     brand: 'Nissan',
@@ -143,5 +209,4 @@ export const cars = [
     topRank: 4,
     owner: 'Elena Rivas',
     color: 'Blanco'
-  }
-];
+  }*/

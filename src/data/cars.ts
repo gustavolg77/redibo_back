@@ -17,8 +17,8 @@ export const cars = [
     color: 'Azul',
     rentals: [
       {
-        rentalId: 5,
-        tenant: 'Ana Robeda',
+        rentalId: 2,
+        tenant: 'Maria Fernandez Lopez',
         startDate: '2025-05-05',
         endDate: '2025-05-08',
         price: 250
@@ -50,14 +50,14 @@ export const cars = [
     rentals: [
       {
         rentalId: 1,
-        tenant: 'Juan Pérez',
+        tenant: 'Juan Carlos Perez Gomez',
         startDate: '2025-05-01',
         endDate: '2025-05-05',
         price: 250
       },
       {
-        rentalId: 2,
-        tenant: 'Carlos Gómez',
+        rentalId: 5,
+        tenant: 'Ana',
         startDate: '2025-05-10',
         endDate: '2025-05-15',
         price: 150

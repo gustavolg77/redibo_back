@@ -5,6 +5,7 @@ import path from "path"; // Utilizar path si es necesario más adelante
 import alertRoutes from "./routes/alertRoutes";
 import carRoutes from "./routes/carRoutes";
 import rentalsRoutes from "./routes/rentals";
+import inquilinoRoutes from "./routes/inquilinoRoutes"
 
 const app = express();
 const PORT = 5000;
@@ -28,6 +29,7 @@ app.get("/", (req, res) => {
 // Rutas de la API
 app.use("/api/alerts", alertRoutes);
 app.use("/api/cars", carRoutes);
+app.use("/api/inquilinos", inquilinoRoutes); 
 
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en http://localhost:${PORT}`);

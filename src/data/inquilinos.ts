@@ -15,8 +15,8 @@ export const tenants = [
         carBrand: "Honda Civic",
         startDate: "2025-05-01",
         endDate: "2025-05-05",
-        status: "completed",
-        owner: "Elena Rivas"
+        status: "active",
+        owner: "Tu"
       },
       {
         id: 101,
@@ -24,8 +24,8 @@ export const tenants = [
         carBrand: "Nissan Altima",
         startDate: "2025-03-12",
         endDate: "2025-03-15",
-        status: "completed",
-        owner: "Elena Rivas"
+        status: "active",
+        owner: "Tu"
       },
       {
         id: 102,
@@ -52,8 +52,8 @@ export const tenants = [
         carBrand: "Toyota Corolla",
         startDate: "2025-05-05",
         endDate: "2025-05-08",
-        status: "completed",
-        owner: "Elena Rivas"
+        status: "active",
+        owner: "Tu"
       },
       {
         id: 103,
@@ -81,7 +81,7 @@ export const tenants = [
         startDate: "2025-05-16",
         endDate: "2025-05-25",
         status: "upcoming",
-        owner: "Elena Rivas"
+        owner: "Maria Perez"
       },
       {
         id: 104,
@@ -108,8 +108,8 @@ export const tenants = [
         carBrand: "Honda Civic",
         startDate: "2025-05-10",
         endDate: "2025-05-15",
-        status: "upcoming",
-        owner: "Elena Rivas"
+        status: "Active",
+        owner: "Tu"
       }
     ]
   },
@@ -127,8 +127,8 @@ export const tenants = [
         carBrand: "Honda Civic",
         startDate: "2025-05-18",
         endDate: "2025-05-19",
-        status: "upcoming",
-        owner: "Elena Rivas"
+        status: "active",
+        owner: "Tu"
       }
     ]
   },
@@ -147,7 +147,7 @@ export const tenants = [
         startDate: "2025-05-25",
         endDate: "2025-05-28",
         status: "upcoming",
-        owner: "Elena Rivas"
+        owner: "Alfredo Flores"
       }
     ]
   },

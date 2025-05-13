@@ -7,7 +7,7 @@ export const getInquilinoSummary = async (id: number) => {
   if (!inquilino) {
     throw new Error('Inquilino no encontrado');
   }
-
+  const usuarioLogueadoId = 1;
 
   const rentalsWithCarInfo = inquilino.rentals.map(rental => {
     const car = cars.find(c => c.id === rental.carId);
@@ -15,7 +15,8 @@ export const getInquilinoSummary = async (id: number) => {
       ...rental,
       carBrand: car?.brand || 'Desconocido',
       carModel: car?.model || 'Desconocido',
-      carImage: car?.image || ''
+      carImage: car?.image || '',
+      owner: id === usuarioLogueadoId ? 'Tú' : rental.owner
     };
   });
 

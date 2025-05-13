@@ -98,7 +98,7 @@ export const cars = [
   {
     id: 4,
     brand: 'Toyota',
-    model: 'Rav 4',
+    model: 'RAV4',
     year: 2021,
     image: 'https://www.webmotors.com.br/rbx/_next/image?url=https%3A%2F%2Fimage.webmotors.com.br%2F_fotos%2Fanunciousados%2Fgigante%2F2025%2F202504%2F20250410%2Ftoyota-rav4-2-5-vvtie-hybrid-s-awd-cvt-wmimagem13585420622.webp&w=256&q=75',
     status: 'Disponible',
@@ -143,9 +143,9 @@ export const cars = [
     owner: 'Elena Rivas',
     color: 'Azul',
     rentals: [] // agregado
-  }
-];
-  /*
+  },
+
+  
   {
     id: 6,
     brand: 'Nissan',
@@ -209,4 +209,4 @@ export const cars = [
     topRank: 4,
     owner: 'Elena Rivas',
     color: 'Blanco'
-  }*/
+  }];

@@ -97,7 +97,7 @@ export const tenants = [
   {
     id: 4,
     name: "Ana",
-    phone: "+591 77881234",
+    phone: "591 77881234",
     email: "ana@email.com",
     image: "https://randomuser.me/api/portraits/women/33.jpg",
     totalRentals: 1,

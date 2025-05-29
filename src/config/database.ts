@@ -8,7 +8,6 @@ Vista rápida del funcionamiento y contenido de esta carpeta
 
 // El error sale porque Prisma no generará un cliente si no hay modelos definidos
 import { PrismaClient } from '@prisma/client';
-
 const prisma = new PrismaClient();
 
 // Conexión a la database

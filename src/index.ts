@@ -11,7 +11,7 @@ import ratingRoutes from './routes/ratingRoutes'
 
 const app = express();
 const PORT = 5000;
-
+// Trigger deploy 
 // CORS configuracion para permitir peticiones desde el frontend
 app.use(cors({
   origin: 'http://localhost:3002', // aquí va el puerto del FRONTEND

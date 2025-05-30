@@ -10,7 +10,8 @@ import validateWhatsappRouter from "./routes/validateWhatsapp"
 import ratingRoutes from './routes/ratingRoutes'
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+
 // Trigger deploy 
 // CORS configuracion para permitir peticiones desde el frontend
 const allowedOrigins = [

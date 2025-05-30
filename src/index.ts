@@ -18,6 +18,10 @@ app.use(cors({
   credentials: true
 }));
 
+app.use(cors({
+  origin: 'https://redibo-front-eight.vercel.app/', // tu dominio de frontend
+  credentials: true,
+}));
 // Seguridad con Helmet (opcional, pero recomendable)
 app.use(helmet());
 

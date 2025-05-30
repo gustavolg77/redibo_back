@@ -13,14 +13,14 @@ const app = express();
 const PORT = 5000;
 // Trigger deploy 
 // CORS configuracion para permitir peticiones desde el frontend
-app.use(cors({
-  origin: 'http://localhost:3002', // aquí va el puerto del FRONTEND
-  credentials: true
-}));
+const allowedOrigins = [
+  'http://localhost:3002',
+  'https://redibo-front-eight.vercel.app', // sin la barra final
+];
 
 app.use(cors({
-  origin: 'https://redibo-front-eight.vercel.app/', // tu dominio de frontend
-  credentials: true,
+  origin: allowedOrigins,
+  credentials: true
 }));
 // Seguridad con Helmet (opcional, pero recomendable)
 app.use(helmet());

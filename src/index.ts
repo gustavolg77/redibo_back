@@ -15,7 +15,8 @@ const PORT = 5000;
 // CORS configuracion para permitir peticiones desde el frontend
 const allowedOrigins = [
   'http://localhost:3002',
-  'https://redibo-front-eight.vercel.app', // sin la barra final
+  'https://redibo-front-eight.vercel.app',
+  'https://redibo-front-2ul3wcd0b-luis-gustavos-projects-686d2249.vercel.app', // <-- agrega este
 ];
 
 app.use(cors({

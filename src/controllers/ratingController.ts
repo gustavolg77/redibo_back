@@ -57,7 +57,7 @@ export const getRatings = (req: Request, res: Response) => {
       date: "2025-05-24",
       rating: 5.0,
       comments: 2,
-      review: "Inquilina ejemplar, muy respetuosa.",
+      review: "Un automovil util, comodo y se viaja con mucho comfort",
       image: "https://randomuser.me/api/portraits/women/68.jpg",
       commentsList: [
         { user: "Andrés Q.", text: "Siempre amable y puntual." },

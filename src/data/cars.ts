@@ -143,9 +143,9 @@ export const cars = [
     owner: 'Elena Rivas',
     color: 'Azul',
     rentals: [] // agregado
-  },
-
-  
+  }
+];
+  /*
   {
     id: 6,
     brand: 'Nissan',
@@ -181,7 +181,7 @@ export const cars = [
   {
     id: 8,
     brand: 'Ford',
-    model: 'Eco Sport',
+    model: 'EcoSport',
     year: 2021,
     image: 'https://static.abw.by/upload/2024/11/19/d4c399fea43227c83b70d720bdc99f1c/d4c399fea43227c83b70d720bdc99f1c-600.jpeg',
     status: 'Disponible',
@@ -209,4 +209,6 @@ export const cars = [
     topRank: 4,
     owner: 'Elena Rivas',
     color: 'Blanco'
-  }];
+  }
+];
+*/

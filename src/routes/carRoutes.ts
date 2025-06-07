@@ -1,15 +1,19 @@
 import { Router } from 'express';
 import { getAllCars, getCarById, getCarSummaryController } from '../controllers/carController';
+import { getCommentsByHost } from '../controllers/carCommentsController';
 
 const router = Router();
 
 // Ruta para obtener todos los autos
 router.get('/', getAllCars);
 
-// Ruta para obtener un auto por su ID
-router.get('/:id', getCarById);
+// Ruta para obtener comentarios (más específica)
+router.get('/comments', getCommentsByHost);
 
-// Ruta para obtener un resumen de un auto por su ID
+// Ruta para obtener resumen de auto
 router.get('/summary/:id', getCarSummaryController);
+
+// Ruta para obtener auto por ID (más general)
+router.get('/:id', getCarById);
 
 export default router;

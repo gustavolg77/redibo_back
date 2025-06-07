@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 
-const prisma = new PrismaClient();
-
+//const prisma = new PrismaClient();
+/*
 export async function getCarSummary(id: number) {
   try {
     const auto = await prisma.auto.findUnique({
@@ -39,3 +39,4 @@ export async function getCarSummary(id: number) {
     return { error: 'Error en la consulta' };
   }
 }
+*/
